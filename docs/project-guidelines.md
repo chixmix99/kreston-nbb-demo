@@ -39,20 +39,13 @@ Prefer simple, clear, and scalable solutions over clever or overly abstract impl
 
 ---
 
-## 3. Default technology preferences
+## 3. Technology decisions (not finalized)
 
-Use the checked-in build as the source of truth. The current baseline is:
+The target technology stack and versions have not been decided. Do not treat any language, framework, database, library, or configuration format as an approved default.
 
-- Java 25.
-- Spring Boot 4.1.0.
-- Gradle Kotlin DSL.
-- Spring Web MVC.
-- Spring Validation.
-- Spring Data JPA / Hibernate.
-- H2 for disposable local development and tests.
-- `application.properties`.
+For implementation work, inspect the checked-in build and configuration files to understand what currently exists. That describes the current codebase; it does not decide the target stack.
 
-For durable production evolution, evaluate:
+Potential options may be evaluated when a concrete requirement calls for a technology decision. This list is not an approved roadmap or a set of defaults:
 
 - PostgreSQL.
 - Liquibase.
