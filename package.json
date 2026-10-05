@@ -1,0 +1,32 @@
+{
+  "name": "kreston-nbb-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/unit/*.test.ts",
+    "test:e2e": "playwright test",
+    "check": "npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "latest",
+    "@fontsource-variable/noto-sans-arabic": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "latest",
+    "@playwright/test": "latest",
+    "@types/node": "^24",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "node": "^24",
+    "typescript": "latest"
+  },
+  "engines": { "node": ">=24 <25" }
+}

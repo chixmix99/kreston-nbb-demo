@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.cache/
+test-results/
+playwright-report/
+artifacts/
+.env*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+
+# Client source documents stay local unless explicitly approved for version control.
+*.pdf
+*.docx
